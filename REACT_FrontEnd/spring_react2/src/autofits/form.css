@@ -1,0 +1,16 @@
+/* form.css */
+
+/* Styles for portrait orientation */
+@media (orientation: portrait) {
+    .form-container {
+      background-color: lightblue;
+    }
+  }
+  
+  /* Styles for landscape orientation */
+  @media (orientation: landscape) {
+    .form-container {
+      background-color: lightcoral;
+    }
+  }
+  
