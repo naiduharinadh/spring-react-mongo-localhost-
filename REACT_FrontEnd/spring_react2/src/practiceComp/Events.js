@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import Compo from "../components/component1";
+import bcrypt from 'bcryptjs';
 import Getdata from "./getData";
 import axios from "axios";
+import { useNavigate  } from 'react-router-dom';
 import "./form.css";
 
+
 function HariNadh1() {
+    const navigate  = useNavigate ();
     const [name, setName] = useState('');    
     const [errorMessage, setErrorMessage] = useState('');
     const [userId, setUserId] = useState('');
@@ -12,30 +15,27 @@ function HariNadh1() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [reEnterPassword, setReEnterPassword] = useState('');
+    const [hashedPassword, sethaspassowrd] = useState("");
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
     async function senddata(e) {
         e.preventDefault();
-        // userId, phone, email, password
-        //const response = await axios.get(`/saveuser/${userId}/${contact}/${email}/${reEnterPassword}`);
-        /*const userId= "adsfaaasd"
-        const contact = "asdfkasadfa"
-        const email="newhari2001@gmail.com"
-        const reEnterPassword = "password"
-        */
+        
         console.log(userId,contact,email,reEnterPassword);
         await axios.post("/saveuser", {
             userId,
             contact,
             email,
-            reEnterPassword
+            reEnterPassword:hashedPassword
         });
-        setEmail('');
-        setUserId('');
-        setPhone('');
-        setPassword('');
-        setReEnterPassword('');
+        navigate('/home/success');
     }
+
+    async function HashPasswd(password){
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+        return hashedPassword;
+      };
 
     const handleNameChange = (e) => {
         // here harinadh should come from the data base, if any user name matched with our DB then it has to 
@@ -72,13 +72,20 @@ function HariNadh1() {
         }
     };
 
-    const handleRePassword = (e) => {
-        setReEnterPassword(e.target.value);
+    const handleRePassword = async (e) => {
+        setReEnterPassword(e.target.value)
         if (password !== e.target.value) {
             setIsButtonDisabled(true);
         } else {
+            const salt = await bcrypt.genSalt(10);
+            //const hashedPassword = await bcrypt.hash(e.target.value, salt);
+            sethaspassowrd(await bcrypt.hash(e.target.value, salt))
+            //setReEnterPassword(hashedPassword);
+            //setReEnterPassword(e.target.value);
             setIsButtonDisabled(false);
         }
+        
+        
     };
 
     // Disable button :: style-sheet 

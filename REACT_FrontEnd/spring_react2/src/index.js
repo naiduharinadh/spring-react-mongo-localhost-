@@ -2,20 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import DataFetcher from "./datafetch.js";
-import Compo from './components/component1';
 import reportWebVitals from './reportWebVitals';
 import HariNadh1 from './practiceComp/Events.js';
-import Parent from './ParentChildFunUsage/Parent.js';
-import Child from './ParentChildFunUsage/Child.js';
 import HariNadh2 from './autofits/ScreenSet.js';
+import Home from './autofits/ScreenSet.js';
+import AppRoutes from './Routes/Routes.js';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   {/* <App /> */}
-   { /* <HariNadh1 /> */}
-   <HariNadh2 />
+< AppRoutes />
+  
+  
+  {/*<HariNadh1 /> */}
+   { /* <HariNadh2 /> */ }
+   { /* <Home /> */}
    {/*<Parent />
    index.js child class: <Child /> */}
   </React.StrictMode>

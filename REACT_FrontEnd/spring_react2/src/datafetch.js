@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Compo from './components/component1';
+
 
 function DataFetcher() {
     const [data, setData] = useState(null);

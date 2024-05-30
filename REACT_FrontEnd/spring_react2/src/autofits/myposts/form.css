@@ -38,21 +38,17 @@ div[id="headername"]{
 .card {
   margin-bottom: 20px;
 }
-
 .headername {
-  width: 55vh;
-  background: linear-gradient(to right, rgb(95, 140, 237), rgb(228, 105, 144));
-  border-radius: 15px;
-  padding: 4px 2vh; /* Adjust padding as needed */
-  margin-left: 7vh;
-  padding-left: 4vh;
+  background: linear-gradient(to right, rgb(67, 119, 232), rgb(232, 67, 119));
+  border-radius: 12.5px;
+  padding: 2vh 2vh; /* Adjust padding as needed */
   align-content: first baseline;
-  margin-top: -5.7vh;
+  margin-left: 10vh;
   text-align: left; /* Ensure text is aligned to the left */
 }
 
-#headername:hover {
-  background: linear-gradient(to right,rgb(217, 113, 146),rgb(67, 119, 232));
+.headername:hover {
+  background: linear-gradient(to right,rgb(232, 67, 119),rgb(67, 119, 232));
   cursor: pointer;
 }
 
