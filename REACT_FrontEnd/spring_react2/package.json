@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://ac81d2412c71b4eb3868fb996c4c9b10-814bd9f46b52226d.elb.ap-southeast-1.amazonaws.com:8080",
+  "proxy": "http://spring-webapp-service:8080",
   "eslintConfig": {
     "extends": [
       "react-app",
