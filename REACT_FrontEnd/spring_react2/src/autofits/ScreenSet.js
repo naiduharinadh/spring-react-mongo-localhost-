@@ -22,10 +22,10 @@ const fetchData = async () => {
 };
 
 const carouselItems = [
-  { id: 1, title: 'Item 1', content: 'Content for item 1', imageUrl: 'https://via.placeholder.com/800x400?text=Item+1' },
-  { id: 2, title: 'Item 2', content: 'Content for item 2', imageUrl: 'https://via.placeholder.com/800x400?text=Item+2' },
-  { id: 3, title: 'Item 3', content: 'Content for item 3', imageUrl: 'https://via.placeholder.com/800x400?text=Item+3' },
-  { id: 4, title: 'Item 4', content: 'Content for item 4', imageUrl: 'https://via.placeholder.com/800x400?text=Item+4' },
+  { id: 1, title: 'Item 1', content: 'Content for item 1', imageUrl: 'https://www.google.com/imgres?q=desktop%20images%20of%20kajal&imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6073730.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2Fkajal-desktop-wallpapers&docid=IN1wgCMN3iCscM&tbnid=51LvKc0jbgWqXM&vet=12ahUKEwjg-uz31uqMAxWJRWwGHQXiKRUQM3oECHwQAA..i&w=2712&h=1536&hcb=2&ved=2ahUKEwjg-uz31uqMAxWJRWwGHQXiKRUQM3oECHwQAA' },
+  { id: 2, title: 'Item 2', content: 'Content for item 2', imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Findianexpress.com%2Farticle%2Fentertainment%2Fmovie-review%2Fmajor-movie-review-sandeep-unnikrishnan-7949642%2F&psig=AOvVaw2df_Euhqe4mjbk5EOXRLJF&ust=1745378489071000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCFkN7X6owDFQAAAAAdAAAAABAE' },
+  { id: 3, title: 'Item 3', content: 'Content for item 3', imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fm416-wallpapers&psig=AOvVaw15E-XM93s66gJJ98vSPp5u&ust=1745378442235000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOD1usfX6owDFQAAAAAdAAAAABAE' },
+  { id: 4, title: 'Item 4', content: 'Content for item 4', imageUrl: 'https://www.google.com/imgres?q=desktop%20images%20of%20kajal&imgurl=https%3A%2F%2Fc4.wallpaperflare.com%2Fwallpaper%2F26%2F283%2F823%2Factresses-kajal-aggarwal-hd-wallpaper-preview.jpg&imgrefurl=https%3A%2F%2Fwww.wallpaperflare.com%2Factresses-kajal-aggarwal-wallpaper-ynwuy&docid=5Sv0Cb-SL7KAAM&tbnid=xZr8SjqKekR4HM&vet=12ahUKEwjg-uz31uqMAxWJRWwGHQXiKRUQM3oECGIQAA..i&w=728&h=410&hcb=2&ved=2ahUKEwjg-uz31uqMAxWJRWwGHQXiKRUQM3oECGIQAA' },
 ];
 
 function App() {
